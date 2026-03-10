@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cálculo IRPF</title>
+</head>
+<body>
+    <div class="topo">
+       <div class="caixacima">
+           <p class="titulo">Calculadora IRPF</p>
+           <p class="subtitulo">Cálculo mensal</p>
+       </div>
+       <div class="caixadecorar">
+       </div>
+    </div>
+
+    <div class="areadetrabalho">
+        <div class="calculadora">
+        <div class="card">
+            <div class="linha">    
+               <span>Rendimentos tributáveis:</span>
+               <input type="number" id="salario" placeholder="0,00">
+            </div>   
+        </div>
+
+        <div class="card">
+            <div class="linha dedinho" onclick="toggleCard()">
+               <span>Imposto:</span>
+               <span>
+                    <span id="resultado-imposto">R$ 0,00</span>
+                    <span id="seta">▼</span>
+               </span>
+            </div>
+            <div class="conteudo-card">
+                <div class="linha">
+                    <span>Alíquota efetiva:</span>
+                    <span id="resultado-aliquota">0,00%</span>
+                </div>
+            </div>
+        </div>
+        <div class="botoes">    
+            <button onclick="calcular()">CALCULAR</button>
+            <button onclick="apagar()">&nbsp;APAGAR&nbsp;</button>
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
